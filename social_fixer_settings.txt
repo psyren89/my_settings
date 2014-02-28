@@ -45,5 +45,6 @@
  "installed_on_5": 1393203722505,
  "hidden_elements": "Games Feed,Lists Section",
  "right_panels_hidden": ";Recommended Pages;People you may know",
- "css": "div.ticker_container {height:725px !important}"
+ "css": "div.ticker_container {height:725px !important}",
+ "console_logging_enabled": false
 }
