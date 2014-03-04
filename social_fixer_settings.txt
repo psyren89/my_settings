@@ -43,8 +43,9 @@
  "filters": [],
  "sfx_donate_check_time2": 1393808519090,
  "installed_on_5": 1393203722505,
- "hidden_elements": "Games Feed,Lists Section",
- "right_panels_hidden": ";Recommended Pages;People you may know",
+ "hidden_elements": "Games Feed,Lists Section,Find Friends,Home Shortcut",
+ "right_panels_hidden": ";Recommended Pages;People you may know;Trending;Suggested Groups;Rate Recently Used Apps",
  "css": "div.ticker_container {height:725px !important}",
- "console_logging_enabled": false
+ "console_logging_enabled": false,
+ "sfx_no_donate2": true
 }
