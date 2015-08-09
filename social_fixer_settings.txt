@@ -5,7 +5,6 @@
  "hide_options_indicator": true,
  "hide_trending_articles": true,
  "enable_font_size": true,
- "fix_comments": true,
  "chat_images_to_names": true,
  "show_nav_all_connections": false,
  "show_nav_unblock_applications": false,
@@ -43,9 +42,11 @@
  "filters": [],
  "sfx_donate_check_time2": 1393808519090,
  "installed_on_5": 1393203722505,
- "hidden_elements": "Games Feed,Lists Section,Find Friends,Home Shortcut,Similar To PAGE dropdown when you Like a news feed post",
- "right_panels_hidden": ";Recommended Pages;People you may know;Trending;Suggested Groups;Rate Recently Used Apps;Music Pages You May Like;Get Interesting News;Rate Films You've Watched;Rate TV Programmes You've Watched;Find More Friends;Add to Books;Add to Films;Add to TV Programmes;Find mutual friends;Popular Pages In Your Area;Related Events;Sponsored",
+ "hidden_elements": "Games Feed,Lists Section,Find Friends,Home Shortcut,Similar To PAGE dropdown when you Like a news feed post,Trending,Trending,Apps Section,Interests Section,Developer Section,Top Stories Prompt",
+ "right_panels_hidden": ";Recommended Pages;People you may know;Trending;Suggested Groups;Rate Recently Used Apps;Music Pages You May Like;Get Interesting News;Rate Films You've Watched;Rate TV Programmes You've Watched;Find More Friends;Add to Books;Add to Films;Add to TV Programmes;Find mutual friends;Popular Pages In Your Area;Related Events;Sponsored;People You May Know",
  "css": "div.ticker_container {height:725px !important}",
  "console_logging_enabled": false,
- "sfx_no_donate2": true
+ "sfx_no_donate2": true,
+ "auto_switch_to_recent_stories_show_message": false,
+ "my_events_default_open": true
 }
