@@ -1,107 +1,187 @@
 {
- "update_show_after": 1393290025826,
- "blog_post_latest": 542,
- "version": 9,
- "hide_options_indicator": true,
- "hide_trending_articles": true,
- "fix_comments": true,
- "chat_images_to_names": true,
- "show_nav_all_connections": false,
- "show_nav_unblock_applications": false,
- "show_my_pages": false,
- "show_my_groups": false,
- "show_my_apps": false,
- "display_control_panel": false,
- "hide_game_sidebar": true,
- "hide_game_ticker": true,
- "tips_of_the_day": false,
- "process_news_feed": false,
- "process_profiles": false,
- "show_post_actions": false,
- "fix_comment_wrap": true,
- "reorder": true,
- "undo_ctrl_z": false,
- "prevent_link_redirection": true,
- "tab_count": false,
- "auto_subscribe_news": false,
- "show_options_save_message": false,
- "show_version_changes9": false,
- "check_for_messages9": false,
- "check_for_blog_posts": false,
- "pagelet_toggle": true,
- "my_pages_new_window": false,
- "my_groups_new_window": false,
- "my_apps_new_window": false,
- "highlight_sfx_news": false,
- "filters_enabled": false,
- "filter_news_feed": false,
- "filter_profiles": false,
- "timeline_show_panel": false,
- "chat_compact": true,
- "filters": [],
- "sfx_donate_check_time2": 1393808519090,
- "installed_on_5": 1393203722505,
- "right_panels_hidden": ";Recommended Pages;People you may know;Trending;Suggested Groups;Rate Recently Used Apps;Music Pages You May Like;Get Interesting News;Rate Films You've Watched;Rate TV Programmes You've Watched;Find More Friends;Find mutual friends;Popular Pages In Your Area;Related Events;Sponsored;Rate Books You've Read;Popular Pages in Your Area;Suggested Events;Top Songs;Featured Music Services;Games You May Like;Nearby Places;Create New Groups;Suggested Pages;Recent Friends;Events in Your Network;Tell us what you think;Invite friends to like Pages;People To Follow;People You May Know;Recommended Games",
- "css": "div.ticker_container {height:550px !important}",
- "console_logging_enabled": false,
- "sfx_no_donate2": true,
- "my_events_default_open": true,
- "hidden_connections": {
-  "event": {
-   "373219309483050": true,
-   "1433599363553024": true,
-   "606252016119477": true,
-   "515872028531406": true,
-   "1427521340837826": true,
-   "1386384674981223": true,
-   "1512469375648326": true,
-   "1416296568653094": true,
-   "524088327714087": true,
-   "779407182090294": true,
-   "725494660849455": true,
-   "765388990192117": true,
-   "313764495468891": true,
-   "866974339987383": true,
-   "816620001695217": true,
-   "746884455333371": true,
-   "282555411937760": true,
-   "257958024414040": true,
-   "339543899546599": true,
-   "690268524391380": true,
-   "1559637700923740": true,
-   "303990966473698": true,
-   "1494469347468907": true,
-   "1548956648661174": true,
-   "588015247987186": true,
-   "699488526834152": true,
-   "723381047716635": true,
-   "797860503610649": true,
-   "707593312642792": true,
-   "832434826796230": true,
-   "322446821277503": true,
-   "1739562136269013": true,
-   "1028789127137067": true,
-   "1533464693559004": true,
-   "314696372046199": true,
-   "934323546589398": true,
-   "629736840464629": true,
-   "694808250636156": true,
-   "907208262632938": true,
-   "750878338343961": true,
-   "1539268833001498": true,
-   "1583527761887712": true,
-   "828125153924635": true,
-   "1634925553422400": true,
-   "586864328120102": true
-  }
- },
- "hidden_elements": "Games Feed,Find Friends (Left Column),Find Friends,Home Shortcut,Related Links,Top Stories Prompt,Trending,Lists Section,Apps Section,Interests Section,Developer Section",
- "auto_switch_to_recent_stories_show_message": false,
- "open_messages_in_full_window": false,
- "post_font_size": "12",
- "comment_font_size": "12",
- "enable_font_size": true,
- "chat_disable_sidebar": true,
- "image_preview_position": "topright",
- "image_preview_show_footnote": false
+  "options": {
+    "always_show_tabs": false,
+    "auto_switch_hide_message": true,
+    "auto_switch_to_recent_stories": true,
+    "badge_x": -64,
+    "badge_y": 5,
+    "check_unread_filtered_messages": false,
+    "comment_button": true,
+    "comment_button_ctrl": true,
+    "filters_enabled_groups": true,
+    "filters_enabled_pages": true,
+    "fix_timestamps_short": true,
+    "hide_mark_read_groups": false,
+    "hide_mark_read_pages": false,
+    "hide_posts_partial": false,
+    "hide_posts_show_match": false,
+    "mark_all_read_next": false,
+    "mark_read_display_message": false,
+    "news_alerts": false,
+    "post_actions": false,
+    "remove_right_column": true,
+    "run_on_apps": false,
+    "sfx_option_show_donate": false,
+    "sfx_option_show_donate2": false,
+    "trending_bars": false
+  },
+  "filters": [
+    {
+      "actions": [
+        {
+          "action": "hide",
+          "custom_note": "Sponsored Post hidden! Click to show/hide this ad.",
+          "show_note": false
+        }
+      ],
+      "configurable_actions": true,
+      "custom_actions": true,
+      "description": "Hide all sponsored and suggested posts from the news feed",
+      "disabled": false,
+      "enabled": true,
+      "id": null,
+      "match": "ANY",
+      "rules": [
+        {
+          "condition": {
+            "text": ".uiStreamSponsoredLink"
+          },
+          "operator": "contains_selector",
+          "target": "any"
+        },
+        {
+          "condition": {
+            "text": "span>a[href^=\"/about/ads\"]"
+          },
+          "operator": "contains_selector",
+          "target": "any"
+        },
+        {
+          "condition": {
+            "text": "Suggested Post"
+          },
+          "operator": "contains",
+          "target": "any"
+        }
+      ],
+      "stop_on_match": true,
+      "subscribed": false,
+      "subscription_last_updated_on": 1478479372868,
+      "title": "Hide Sponsored/Suggested Posts",
+      "updated_on": 1478479463753
+    }
+  ],
+  "tweaks": [
+    {
+      "css": "*[sfx_post] > div[data-ownerid] { display:none !important; }",
+      "description": "When you click a link from the news feed or Like a page post, Facebook inserts a block of other things you might like. Enable this Tweak to hide those blocks.",
+      "enabled": true,
+      "id": 2,
+      "subscribed": false,
+      "title": "Hide \"Related\" Stories and Pages"
+    }
+  ],
+  "hiddens": {
+    "2": {
+      "id": 2,
+      "name": "Right-Column Suggested Pages",
+      "parent": ".pagelet",
+      "selector": ".ego_column a.uiHeaderActions[href^=\"/l.php?u=%2Fpages%2F%3Fcategory%3Dtop\"]"
+    },
+    "3": {
+      "id": 3,
+      "name": "Right-Column Sponsored Pagelet",
+      "parent": ".pagelet",
+      "selector": ".ego_column .adsCategoryTitleLink"
+    },
+    "4": {
+      "id": 4,
+      "name": "Right-Column Footer",
+      "selector": "#pagelet_rhc_footer"
+    },
+    "5": {
+      "id": 5,
+      "name": "Right-Column Trending Pagelet",
+      "selector": "#pagelet_trending_tags_and_topics"
+    },
+    "12": {
+      "id": 12,
+      "name": "Left-Column Lists",
+      "selector": "#listsNav"
+    },
+    "13": {
+      "id": 13,
+      "name": "Left-Column Interests",
+      "selector": "#interestsNav"
+    },
+    "15": {
+      "id": 15,
+      "name": "Left-Column Developer",
+      "selector": "#developerNav"
+    },
+    "16": {
+      "id": 16,
+      "name": "Left-Column Payments",
+      "selector": "#paymentsNav"
+    },
+    "17": {
+      "id": 17,
+      "name": "Left Col: Welcome Box",
+      "selector": "#pagelet_welcome_box"
+    },
+    "20": {
+      "id": 20,
+      "name": "Right-Column Suggested Groups",
+      "parent": ".pagelet",
+      "selector": "#pagelet_ego_pane div[id^=\"GroupSuggestionCard\"]"
+    },
+    "23": {
+      "id": 23,
+      "name": "Viewing Most Recent Banner",
+      "parent": "div.mvm",
+      "selector": "span.uiIconText ~ a[href=\"/?sk=h_nor\"]"
+    },
+    "115": {
+      "id": 115,
+      "name": "Left Col: Suggest Edits",
+      "selector": "#navItem_219124168114356"
+    },
+    "117": {
+      "id": 117,
+      "name": "Left Col: Games Feed",
+      "selector": "#navItem_261369767293002"
+    },
+    "123": {
+      "id": 123,
+      "name": "Left Col: Create",
+      "selector": "#createNav"
+    }
+  },
+  "postdata": {},
+  "friends": {},
+  "stats": {
+    "installed_on": 1472517513828,
+    "sfx_news_checked_on": 1478479396616
+  },
+  "tasks": {
+    "clean_postdata_cache": {
+      "run_on": 1472517404441
+    },
+    "news_alerts": {
+      "run_on": 1485498847407
+    },
+    "sfx_option_show_donate": {
+      "run_on": 1483492216970
+    },
+    "storage_check": {
+      "run_on": 1485444060410
+    },
+    "update_filter_subscriptions": {
+      "run_on": 1485498847409
+    },
+    "update_tweak_subscriptions": {
+      "run_on": 1485498847410
+    }
+  },
+  "messages": {}
 }
